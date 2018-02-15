@@ -24,7 +24,6 @@
 
 package be.yildizgames.common.mapping.model;
 
-import be.yildizgames.common.mapping.BaseMapperTest;
 import be.yildizgames.common.model.EntityId;
 
 /**
