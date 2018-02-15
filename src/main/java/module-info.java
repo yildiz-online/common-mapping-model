@@ -22,17 +22,10 @@
  *
  */
 
-package be.yildizgames.common.mapping;
+module be.yildizgames.common.mapping.model {
 
+    requires be.yildizgames.common.model;
+    requires be.yildizgames.common.mapping;
 
-import be.yildizgames.common.model.PlayerId;
-
-/**
- * @author Grégory Van den Borre
- */
-public class PlayerIdMapperTest extends BaseMapperTest<PlayerId> {
-
-    public PlayerIdMapperTest() {
-        super(PlayerIdMapper.getInstance(), PlayerId.valueOf(2));
-    }
+    exports be.yildizgames.common.mapping.model;
 }

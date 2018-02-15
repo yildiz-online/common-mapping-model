@@ -22,16 +22,18 @@
  *
  */
 
-package be.yildizgames.common.mapping;
+package be.yildizgames.common.mapping.model;
 
-import be.yildizgames.common.model.EntityId;
+
+import be.yildizgames.common.mapping.BaseMapperTest;
+import be.yildizgames.common.model.PlayerId;
 
 /**
  * @author Grégory Van den Borre
  */
-public class EntityIdMapperTest extends BaseMapperTest<EntityId> {
+public class PlayerIdMapperTest extends BaseMapperTest<PlayerId> {
 
-    public EntityIdMapperTest() {
-        super(EntityIdMapper.getInstance(), EntityId.valueOf(7));
+    public PlayerIdMapperTest() {
+        super(PlayerIdMapper.getInstance(), PlayerId.valueOf(2));
     }
 }
