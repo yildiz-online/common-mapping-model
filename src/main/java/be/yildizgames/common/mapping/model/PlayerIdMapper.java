@@ -45,7 +45,7 @@ public class PlayerIdMapper implements ObjectMapper<PlayerId> {
     }
 
     @Override
-    public PlayerId from(String s) throws MappingException {
+    public final PlayerId from(String s) throws MappingException {
         ImplementationException.throwForNull(s);
         try {
             return PlayerId.valueOf(Integer.parseInt(s));
@@ -55,7 +55,7 @@ public class PlayerIdMapper implements ObjectMapper<PlayerId> {
     }
 
     @Override
-    public String to(PlayerId playerId) {
+    public final String to(PlayerId playerId) {
         ImplementationException.throwForNull(playerId);
         return String.valueOf(playerId.value);
     }

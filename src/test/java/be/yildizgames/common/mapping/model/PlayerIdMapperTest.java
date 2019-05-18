@@ -34,4 +34,5 @@ public class PlayerIdMapperTest extends BaseMapperTest<PlayerId> {
     public PlayerIdMapperTest() {
         super(PlayerIdMapper.getInstance(), PlayerId.valueOf(2));
     }
+
 }
