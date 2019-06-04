@@ -34,4 +34,5 @@ public class EntityIdMapperTest extends BaseMapperTest<EntityId> {
     public EntityIdMapperTest() {
         super(EntityIdMapper.getInstance(), EntityId.valueOf(7));
     }
+
 }

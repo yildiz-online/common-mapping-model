@@ -45,7 +45,7 @@ public class EntityIdMapper implements ObjectMapper<EntityId> {
     }
 
     @Override
-    public EntityId from(String s) throws MappingException {
+    public final EntityId from(String s) throws MappingException {
         ImplementationException.throwForNull(s);
         try {
             return EntityId.valueOf(Long.parseLong(s));
@@ -55,7 +55,7 @@ public class EntityIdMapper implements ObjectMapper<EntityId> {
     }
 
     @Override
-    public String to(EntityId entityId) {
+    public final String to(EntityId entityId) {
         ImplementationException.throwForNull(entityId);
         return String.valueOf(entityId.value);
     }
