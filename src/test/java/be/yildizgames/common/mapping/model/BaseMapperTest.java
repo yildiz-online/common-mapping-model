@@ -24,7 +24,6 @@
 
 package be.yildizgames.common.mapping.model;
 
-import be.yildizgames.common.exception.implementation.ImplementationException;
 import be.yildizgames.common.mapping.ObjectMapper;
 import be.yildizgames.common.mapping.Separator;
 import be.yildizgames.common.mapping.exception.MappingException;
@@ -66,11 +65,11 @@ public abstract class BaseMapperTest<T>{
 
     @Test
     public void fromNull() throws MappingException {
-        Assertions.assertThrows(ImplementationException.class, () -> mapper.from(null));
+        Assertions.assertThrows(NullPointerException.class, () -> mapper.from(null));
     }
 
     @Test
     public void toNull() {
-        Assertions.assertThrows(ImplementationException.class, () -> mapper.to(null));
+        Assertions.assertThrows(NullPointerException.class, () -> mapper.to(null));
     }
 }

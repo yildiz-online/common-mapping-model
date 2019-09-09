@@ -24,10 +24,11 @@
 
 package be.yildizgames.common.mapping.model;
 
-import be.yildizgames.common.exception.implementation.ImplementationException;
 import be.yildizgames.common.mapping.ObjectMapper;
 import be.yildizgames.common.mapping.exception.MappingException;
 import be.yildizgames.common.model.EntityId;
+
+import java.util.Objects;
 
 /**
  * @author Grégory Van den Borre
@@ -46,7 +47,7 @@ public class EntityIdMapper implements ObjectMapper<EntityId> {
 
     @Override
     public final EntityId from(String s) throws MappingException {
-        ImplementationException.throwForNull(s);
+        Objects.requireNonNull(s);
         try {
             return EntityId.valueOf(Long.parseLong(s));
         } catch (final NumberFormatException nfe) {
@@ -56,7 +57,6 @@ public class EntityIdMapper implements ObjectMapper<EntityId> {
 
     @Override
     public final String to(EntityId entityId) {
-        ImplementationException.throwForNull(entityId);
         return String.valueOf(entityId.value);
     }
 }
