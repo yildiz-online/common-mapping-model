@@ -29,9 +29,9 @@ import be.yildizgames.common.model.PlayerId;
 /**
  * @author Grégory Van den Borre
  */
-public class PlayerIdMapperTest extends BaseMapperTest<PlayerId> {
+class PlayerIdMapperTest extends BaseMapperTest<PlayerId> {
 
-    public PlayerIdMapperTest() {
+    PlayerIdMapperTest() {
         super(PlayerIdMapper.getInstance(), PlayerId.valueOf(2));
     }
 
