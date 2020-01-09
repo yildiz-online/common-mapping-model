@@ -29,9 +29,9 @@ import be.yildizgames.common.model.EntityId;
 /**
  * @author Grégory Van den Borre
  */
-public class EntityIdMapperTest extends BaseMapperTest<EntityId> {
+class EntityIdMapperTest extends BaseMapperTest<EntityId> {
 
-    public EntityIdMapperTest() {
+    EntityIdMapperTest() {
         super(EntityIdMapper.getInstance(), EntityId.valueOf(7));
     }
 

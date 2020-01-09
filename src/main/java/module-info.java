@@ -22,7 +22,7 @@
  *
  */
 
-module be.yildizgames.common.mapping.model {
+open module be.yildizgames.common.mapping.model {
 
     requires be.yildizgames.common.model;
     requires be.yildizgames.common.mapping;
