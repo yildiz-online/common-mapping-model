@@ -28,7 +28,7 @@
   <name>Yildiz-Engine Common Mapping Model</name>
   <description>Common Mapping Model library for the yildiz project, contains utilities to map model classes.
   </description>
-  <url>https://bitbucket.org/yildiz-engine-team/common-model</url>
+  <url>https://github.com/yildiz-online/common-model</url>
 
   <artifactId>common-mapping-model</artifactId>
   <version>1.0.8-SNAPSHOT</version>
@@ -36,9 +36,9 @@
   <packaging>jar</packaging>
   <inceptionYear>2017</inceptionYear>
   <scm>
-    <connection>scm:git:https://bitbucket.org/yildiz-engine-team/common-mapping-model</connection>
-    <developerConnection>scm:git:https://bitbucket.org/yildiz-engine-team/common-mapping-model</developerConnection>
-    <url>https://bitbucket.org/yildiz-engine-team/common-mapping-model</url>
+    <connection>scm:git:https://github.com/yildiz-online/common-mapping-model</connection>
+    <developerConnection>scm:git:https://github.com/yildiz-online/common-mapping-model</developerConnection>
+    <url>https://github.com/yildiz-online/common-mapping-model</url>
   </scm>
   <parent>
     <artifactId>parent</artifactId>
